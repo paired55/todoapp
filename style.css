@@ -1,0 +1,87 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	height: 100vh;
+	box-sizing: border-box;
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 2fr 15fr 1fr;
+	height: 100%;
+}
+
+#header {
+	background-color: #222831;
+	grid-column: 1 / -1;
+	grid-row: 1 / 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#headerText {
+	color: white;
+	text-align: center;
+	font-style: italic;
+	font-size: 2rem;
+	padding: 1rem 2rem 1rem 2rem;
+}
+
+#sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	grid-column: 1 / 2;
+	grid-row: 2 / -1;
+	background-color: #393e46;
+}
+
+#tasksTitle {
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 2rem;
+}
+
+#addButton {
+	font-weight: bold;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 15px;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#addButton:hover {
+	background-color: rgba(0, 255, 255, 0.461);
+}
+
+#hero {
+	background-color: #eeeeee;
+}
+
+#footer {
+	grid-column: 1 / -1;
+	grid-row: 3 / 4;
+	background-color: #222831;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footerText {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: aqua;
+}
