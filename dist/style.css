@@ -62,6 +62,11 @@ body {
 
 #hero {
 	background-color: #eeeeee;
+	padding: 3rem;
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, 1fr);
 }
 
 #footer {
@@ -71,6 +76,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 1rem;
 }
 
 #footerText {
@@ -84,4 +93,62 @@ a {
 
 a:hover {
 	color: aqua;
+}
+
+#modal {
+	padding: 1rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+fieldset {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	border: none;
+}
+
+input {
+	padding: 5px;
+}
+
+#closeButton,
+#submitButton {
+	font-weight: bold;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 15px;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#closeButton:hover,
+#submitButton:hover {
+	background-color: rgba(0, 255, 255, 0.461);
+}
+
+#formSettings {
+	padding: 1rem 0rem 0rem 0rem;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: #00adb5;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+li {
+	list-style-type: none;
+	color: white;
+	font-weight: bold;
 }
