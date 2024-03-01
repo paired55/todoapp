@@ -15,10 +15,21 @@ closeButton.addEventListener("click", () => {
 taskForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 	modal.close();
+
+	localStorage.setItem("title", `${document.querySelector("#title").value}`);
+	localStorage.setItem(
+		"description",
+		`${document.querySelector("#description").value}`
+	);
+	localStorage.setItem(
+		"dueDate",
+		`${document.querySelector("#dueDate").value}`
+	);
+
 	const formData = {
-		title: document.querySelector("#title").value,
-		description: document.querySelector("#description").value,
-		dueDate: document.querySelector("#dueDate").value,
+		title: localStorage.getItem("title"),
+		description: localStorage.getItem("description"),
+		dueDate: localStorage.getItem("dueDate"),
 	};
 
 	const card = document.createElement("div");
